@@ -27,8 +27,6 @@ query client_projects(
       id
       name
       slug
-      state
-      description
     }
   }
 }

@@ -4,9 +4,6 @@ resource: Transactable
 configuration:
   name:
     validation: { presence: true }
-  description:
-    validation:
-      presence: true
   properties:
     deadline:
       validation:
@@ -31,7 +28,7 @@ configuration:
     </div>
   </div>
 
-  <div>  
+  <div>
     <label for="form_description"><abbr title="required">*</abbr> Description</label>
     <div>
       <textarea class="text required" name="{{ form_builder.fields.description.name }}" id="form_description">{{ form_builder.fields.description.value }}</textarea>
@@ -73,7 +70,7 @@ configuration:
       {% endif %}
     </div>
   </div>
-  
+
   {% submit Save %}
 
 {% endform %}
